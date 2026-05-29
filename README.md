@@ -38,10 +38,10 @@ From a local clone:
 /plugin install feathersjs@feathersjs-marketplace
 ```
 
-Once pushed to GitHub:
+From GitHub:
 
 ```bash
-/plugin marketplace add <owner>/<repo>
+/plugin marketplace add hassan4702/feathers-plugin
 /plugin install feathersjs@feathersjs-marketplace
 ```
 
