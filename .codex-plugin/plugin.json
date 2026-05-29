@@ -1,0 +1,18 @@
+{
+  "name": "feathersjs",
+  "version": "0.1.1",
+  "description": "Build FeathersJS v5 (Dove) APIs the idiomatic way: four-file services, around/before/after hooks, TypeBox schemas and resolvers, and a security-focused code reviewer.",
+  "author": {
+    "name": "Hassan",
+    "email": "hassanshakil35066@gmail.com"
+  },
+  "homepage": "https://github.com/hassan4702/feathers-plugin",
+  "repository": "https://github.com/hassan4702/feathers-plugin",
+  "license": "MIT",
+  "keywords": ["feathersjs", "feathers", "typescript", "rest", "realtime", "api"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "FeathersJS API Builder",
+    "shortDescription": "Idiomatic FeathersJS v5 services, hooks, schemas, and a security-focused reviewer."
+  }
+}
