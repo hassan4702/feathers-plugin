@@ -1,0 +1,12 @@
+{
+  "name": "feathersjs",
+  "displayName": "FeathersJS Toolkit",
+  "version": "0.1.1",
+  "description": "Build FeathersJS v5 (Dove) APIs the idiomatic way: four-file services, around/before/after hooks, TypeBox schemas and resolvers, and a security-focused code reviewer.",
+  "author": {
+    "name": "Hassan",
+    "email": "hassanshakil35066@gmail.com"
+  },
+  "license": "MIT",
+  "keywords": ["feathersjs", "feathers", "typescript", "rest", "realtime", "api"]
+}
