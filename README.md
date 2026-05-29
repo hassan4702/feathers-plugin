@@ -97,6 +97,8 @@ curl -fsSL https://raw.githubusercontent.com/hassan4702/feathers-plugin/main/.co
 
 Then ask Codex to use the **feathers-expert** agent for multi-file architecture or debugging questions. (Codex only spawns a subagent when you explicitly ask it to.)
 
+**Cursor** — this repo is also a native [Cursor plugin](https://github.com/cursor/plugin-template): `.cursor-plugin/plugin.json` lives at the root, and Cursor auto-discovers the same `skills/` and `agents/` directories. Cursor's marketplace isn't self-serve — submit the repo link to the Cursor team to get it listed, after which users install it from Cursor's plugin marketplace.
+
 ## Verify it loaded
 
 Plugin components are loaded when a session **starts**, so after installing (or updating), start a fresh Claude Code session, then:

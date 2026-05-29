@@ -12,7 +12,7 @@
   "keywords": ["feathersjs", "feathers", "typescript", "rest", "realtime", "api"],
   "skills": "./skills/",
   "interface": {
-    "displayName": "FeathersJS API Builder",
+    "displayName": "FeathersJS Toolkit",
     "shortDescription": "Idiomatic FeathersJS v5 services, hooks, schemas, and a security-focused reviewer."
   }
 }
