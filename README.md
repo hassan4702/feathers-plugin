@@ -15,6 +15,7 @@ Teaches Claude Code to build [**FeathersJS v5 (Dove)**](https://feathersjs.com) 
 - [What it does](#what-it-does)
 - [Requirements](#requirements)
 - [Installation](#installation)
+- [Use with Codex and other agents](#use-with-codex-and-other-agents)
 - [Verify it loaded](#verify-it-loaded)
 - [Skills](#skills)
 - [Agent](#agent)
@@ -72,6 +73,29 @@ claude plugin install feathersjs@feathersjs-marketplace
 git clone https://github.com/hassan4702/feathers-plugin
 claude --plugin-dir ./feathers-plugin
 ```
+
+## Use with Codex and other agents
+
+The four skills follow the open [Agent Skills](https://vercel.com/docs/agent-resources/skills) standard, so they work beyond Claude Code — including **OpenAI Codex**, Cursor, GitHub Copilot, and Gemini CLI. The `feathers-expert` agent is shipped in each tool's native format.
+
+**Skills** — install all four with the [`skills`](https://github.com/vercel-labs/skills) CLI, targeting Codex:
+
+```bash
+npx skills add hassan4702/feathers-plugin -a codex
+```
+
+Drop `-a codex` to let it auto-detect your installed agents, or target another (e.g. `-a cursor`). Skills install into Codex's skills directory (`~/.codex/skills/`, or a project's `.agents/skills/`).
+
+**Agent (subagent)** — Claude Code reads [`agents/feathers-expert.md`](agents/feathers-expert.md) natively; for Codex, a native subagent ships at [`.codex/agents/feathers-expert.toml`](.codex/agents/feathers-expert.toml). Install it user-wide or per-project:
+
+```bash
+# user-scoped (all your projects)
+mkdir -p ~/.codex/agents
+curl -fsSL https://raw.githubusercontent.com/hassan4702/feathers-plugin/main/.codex/agents/feathers-expert.toml \
+  -o ~/.codex/agents/feathers-expert.toml
+```
+
+Then ask Codex to use the **feathers-expert** agent for multi-file architecture or debugging questions. (Codex only spawns a subagent when you explicitly ask it to.)
 
 ## Verify it loaded
 
