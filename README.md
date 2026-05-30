@@ -1,12 +1,12 @@
-# FeathersJS plugin for Claude Code
+# FeathersJS Toolkit
 
 [![Latest release](https://img.shields.io/github/v/release/hassan4702/feathers-plugin?sort=semver)](https://github.com/hassan4702/feathers-plugin/releases)
 [![License: MIT](https://img.shields.io/github/license/hassan4702/feathers-plugin)](LICENSE)
-[![Claude Code plugin](https://img.shields.io/badge/Claude%20Code-plugin-8A63D2)](https://code.claude.com/docs/en/plugins)
+[![Plugin: Claude Code · Codex · Cursor](https://img.shields.io/badge/plugin-Claude%20Code%20%7C%20Codex%20%7C%20Cursor-8A63D2)](#installation)
 
-Teaches Claude Code to build [**FeathersJS v5 (Dove)**](https://feathersjs.com) APIs the idiomatic way — the four-file service pattern, around/before/after hooks, and TypeBox schemas with resolvers — and to review them for the security mistakes that bite Feathers apps.
+Teaches your AI coding agent — **Claude Code**, **OpenAI Codex**, or **Cursor** — to build [**FeathersJS v5 (Dove)**](https://feathersjs.com) APIs the idiomatic way — the four-file service pattern, around/before/after hooks, and TypeBox schemas with resolvers — and to review them for the security mistakes that bite Feathers apps.
 
-> **This is a public, community-maintained plugin.** Anyone can install it with the commands below. It is **not affiliated with, maintained by, or endorsed by** the FeathersJS project or Anthropic — it's an independent tool *for* working with FeathersJS. (The `feathers-*` packages on npm are plugins for the framework, not for Claude Code.)
+> **This is a public, community-maintained plugin.** Anyone can install it with the commands below. It is **not affiliated with, maintained by, or endorsed by** the FeathersJS project, Anthropic, OpenAI, or Cursor — it's an independent tool *for* working with FeathersJS. (The `feathers-*` packages on npm are plugins for the framework, not for these agents.)
 
 ---
 
@@ -30,13 +30,13 @@ Teaches Claude Code to build [**FeathersJS v5 (Dove)**](https://feathersjs.com) 
 
 ## What it does
 
-FeathersJS has a specific, opinionated structure — services split across four files, a hooks pipeline, and a resolver-based security model — that's easy to get subtly wrong. The wrong mistakes leak passwords, skip authorization, or silently 404. This plugin encodes that structure and those footguns so Claude Code generates idiomatic Feathers code and catches the common security errors before they ship.
+FeathersJS has a specific, opinionated structure — services split across four files, a hooks pipeline, and a resolver-based security model — that's easy to get subtly wrong. The wrong mistakes leak passwords, skip authorization, or silently 404. This plugin encodes that structure and those footguns so your coding agent generates idiomatic Feathers code and catches the common security errors before they ship.
 
-It adds **four model-invoked skills** and **one agent**. The skills fire automatically based on what you're doing — you don't have to call them — though you can invoke them explicitly (`/feathersjs:feathers-service`, etc.).
+It adds **four model-invoked skills** and **one agent**, and ships in the native plugin format for **Claude Code**, **Codex**, and **Cursor** from one repo. The skills fire automatically based on what you're doing — you don't have to call them — though in Claude Code you can invoke them explicitly (`/feathersjs:feathers-service`, etc.).
 
 ## Requirements
 
-- **Claude Code** with plugins enabled
+- **Claude Code**, **OpenAI Codex**, or **Cursor** with plugins/skills enabled
 - A **FeathersJS v5 (Dove)** project using **TypeScript** (the default `feathers generate app` output)
 - One of the core adapters: **SQL via Knex**, **MongoDB**, or **Memory**
 
@@ -56,7 +56,7 @@ The install is **persistent and global** — the skills and agent become availab
 **Pin to a released version** (recommended for stability — you'll only get updates when you re-pin):
 
 ```bash
-/plugin marketplace add hassan4702/feathers-plugin@v0.1.1
+/plugin marketplace add hassan4702/feathers-plugin@v0.2.0
 /plugin install feathersjs@feathersjs-marketplace
 ```
 
@@ -186,7 +186,7 @@ The skills are written to **read an existing sibling service first** and match y
 
 ## Versioning
 
-Releases follow [Semantic Versioning](https://semver.org); see [CHANGELOG.md](CHANGELOG.md) and the [releases page](https://github.com/hassan4702/feathers-plugin/releases). The authoritative version is the `version` field in [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json) — pin to a tag (e.g. `@v0.1.1`) if you want a stable target.
+Releases follow [Semantic Versioning](https://semver.org); see [CHANGELOG.md](CHANGELOG.md) and the [releases page](https://github.com/hassan4702/feathers-plugin/releases). The authoritative version is the `version` field in [`.claude-plugin/plugin.json`](.claude-plugin/plugin.json) (kept in sync with the Codex and Cursor manifests) — pin to a tag (e.g. `@v0.2.0`) if you want a stable target.
 
 ## Contributing
 

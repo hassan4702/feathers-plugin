@@ -1,7 +1,7 @@
 {
   "name": "feathersjs",
   "displayName": "FeathersJS Toolkit",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Build FeathersJS v5 (Dove) APIs the idiomatic way: four-file services, around/before/after hooks, TypeBox schemas and resolvers, and a security-focused code reviewer.",
   "author": {
     "name": "Hassan",
